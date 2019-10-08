@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cristobal Rivas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<style>
+    .titulo {
+        background-color: #8ADBFE;
+    }
+    
+    .titulo td {
+        color: #ffffff;
+    }
+    
+    .cliente {
+        background-color: #CBCBCB;
+    }
+    
+    .cliente td {
+        color: #BDEBFE;
+    }
+</style>
+
+<body>
+
+    <div class="container p-5">
+        <div class="mx-auto" style="width: 700px;">
+            <h1>Lista de Clientes</h1>
+
+            <button onclick="CargarClientes()"> Cargar clientes</button>
+            <br> <br>
+
+            <table border="1">
+                <tr class="titulo">
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Cedula</td>
+                    <td>Telefono</td>
+                    <td>Correo</td>
+                    <td>Nombre 2</td>
+                    <td>Apellido 2</td>
+                    <td>Cedula 2</td>
+                    <td>Telefono 2</td>
+                    <td>Correo 2</td>
+                </tr>
+
+                <tr class="cliente">
+                    <td id="nombrex"></td>
+                    <td id="apellidox"></td>
+                    <td id="cedulax"></td>
+                    <td id="telefonox"></td>
+                    <td id="correox"></td>
+                    <td id="nombre2x"></td>
+                    <td id="apellido2x"></td>
+                    <td id="cedula2x"></td>
+                    <td id="telefono2x"></td>
+                    <td id="correo2x"></td>
+
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        function CargarClientes() {
+            document.getElementById("nombrex").innerText = Nombre;
+            document.getElementById("apellidox").innerText = Apellido;
+            document.getElementById("cedulax").innerText = Cedula;
+            document.getElementById("telefonox").innerText = Telefono;
+            document.getElementById("correox").innerText = Correo;
+            document.getElementById("nombre2x").innerText = Nombre2;
+            document.getElementById("apellido2x").innerText = Apellido2;
+            document.getElementById("cedula2x").innerText = Cedula2;
+            document.getElementById("telefono2x").innerText = Telefono2;
+            document.getElementById("correo2x").innerText = Correo2;
+        }
+    </script>
+    <script src="clientes.txt"></script>
+</body>
+
+</html>

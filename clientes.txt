@@ -1,0 +1,10 @@
+Nombre="Mario";
+Apellido="Atencio";
+Cedula="8-782-2289";
+Telefono="233-7867";
+Correo="matencio@misitio.com";
+Nombre2="Roberto";
+Apellido2="Icaza";
+Cedula2="8-582-2149";
+Telefono2="393-5517";
+Correo2="ricaza@miweb.com";
